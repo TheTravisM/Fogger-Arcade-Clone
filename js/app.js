@@ -24,21 +24,28 @@ Enemy.prototype.render = function() {
 };
 
 // -- [Player] -- /
-// Now write your own player class
+// -- [ Now write your own player class
 var Player = function() {
+    // Variables applied to each of our instances go here,
+    // we've provided one for you to get started
 
-  this.sprite = 'images/char-boy.png';
+    // The image/sprite for our enemies, this uses
+    // a helper we've provided to easily load images
+    this.sprite = 'images/char-boy.png';
 };
-// Player update()
+
+// This class requires an update(),
 Player.prototype.update = function(dt) {
-
+    // You should multiply any movement by the dt parameter
+    // which will ensure the game runs at the same speed for
+    // all computers.
 };
-// Player render()
+
+// Player Class render()
 Player.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
-// a handleInput() method.
-
+// Player Class handleInput() method.
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
