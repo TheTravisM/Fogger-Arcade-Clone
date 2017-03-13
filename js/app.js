@@ -32,11 +32,6 @@ Enemy.prototype.render = function() {
 // -- [Player] -- /
 // -- [ Now write your own player class
 var Player = function() {
-    // Variables applied to each of our instances go here,
-    // we've provided one for you to get started
-
-    // The image/sprite for our enemies, this uses
-    // a helper we've provided to easily load images
     this.sprite = 'images/char-boy.png';
 
     // TODO: #7 Setting the Player initial location
@@ -55,6 +50,7 @@ Player.prototype.update = function(dt) {
 Player.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
+
 // Player Class handleInput() method.
 Player.prototype.handleInput = function(key) {
 
